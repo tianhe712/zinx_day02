@@ -15,7 +15,7 @@ link_directories(${LINK_DIR})
 link_libraries(libzinx.so)
 
 add_executable(${PROJECT_NAME}
-        main.cpp)
+        main.cpp head.cpp head.h controller/AZinxHandler/Ichannel/ZinxTcpData/my_tcpData.cpp controller/AZinxHandler/Ichannel/ZinxTcpData/my_tcpData.h controller/IZinxTcpConnFact/my_tcpconnFact.cpp controller/IZinxTcpConnFact/my_tcpconnFact.h controller/AZinxHandler/Irole/echo_role.cpp controller/AZinxHandler/Irole/echo_role.h controller/AZinxHandler/Irole/exit_framework_role.cpp controller/AZinxHandler/Irole/exit_framework_role.h controller/AZinxHandler/Irole/output_mng_role.cpp controller/AZinxHandler/Irole/output_mng_role.h controller/AZinxHandler/Iprotocol/cmd_parse_protocol.cpp controller/AZinxHandler/Iprotocol/cmd_parse_protocol.h controller/UserData/cmd_msg.cpp controller/UserData/cmd_msg.h controller/AZinxHandler/Ichannel/adv_stdout_channel.cpp controller/AZinxHandler/Ichannel/adv_stdout_channel.h controller/AZinxHandler/Ichannel/adv_stdin_channel.cpp controller/AZinxHandler/Ichannel/adv_stdin_channel.h)
 
 #使用如下语句完成库的链接操作：
 target_link_libraries(${PROJECT_NAME} libzinx.so)
